@@ -1,18 +1,62 @@
 ---
 marp: true
+paginate: true
 ---
 
-# YouTubed動画を課金無しで安全にダウンロードする技 - はじめてのUNIXシェル -
+# YouTube動画を課金無しで安全にダウンロードする技 - はじめてのUNIXシェル -
 
 ### 大岩 泰史
 
 ---
 # Agenda
 
-- CUIについて知る
-- UNIXについて知る
-- youtube動画のダウンロード方法を知る
-- もっとコンピュータを活用する方法を知る
+以下の3つのテーマについて知る
+
+1. UNIX
+2. CLI
+3. YouTube動画をダウンロードする方法
+
+--- 
+
+# UNIXとは何か。私たちに何をもたらしたのか。
+
+コンピュータ用のオペレーティングシステム(OS)の一種である。OSは基本ソフトウェアともよばれ、各種装置の基本的な制御や管理を行う。
+
+## 特徴
+
+「移植可能なオペレーティングシステムという新境地を開拓した」(UNIXという考え方 その設計思想と哲学)
+機種ごとにOSやソフトウェアを開発する必要がなくなった。
+
+## 歴史
+1969年にAT&T(ベル研究所)のケン・トンプソンらが発明したとされている。
+90年代以降に独自に改良を加えて、MacOS や Linux が誕生した。
+
+---
+
+# UNIXとは何か。私たちに何をもたらしたのか。
+
+## Desktop Operating System Market Share Worldwide 
+
+Nov 2020 - Nov 2021 (https://gs.statcounter.com/ 2021/12/8閲覧)
+
+OS | シェア 
+-----|------
+Windows | 74.2 % 
+MacOS | 16.0 %
+ChromeOS|2.5 %
+Linux|2.0 %
+
+---
+
+# UNIXとは何か。私たちに何をもたらしたのか。
+
+## Percentages of websites using various operating systems
+(W3Techs.com, 8 December 2021)
+
+OS | シェア 
+-----|------
+UNIX | 78.6 % 
+Windows | 21.6 %
 
 ---
 
@@ -20,8 +64,8 @@ marp: true
 
 「コンピュータとその機械の利用者（通常は人間）の間での情報をやりとりするため」(wikipedia)の仕組みのことである。
 
-- GUI: Graphical User Interface
-- CLI: Command Line Interface
+    GUI: Graphical User Interface
+    CLI: Command Line Interface
 
 ---
 
@@ -29,13 +73,12 @@ marp: true
 
 普段パソコンやスマートフォンを使うとき、GUIを介して人間の意図をコンピュータに伝えている。
 
-キーボード以外で操作するのを可能にしている。
-
+キーボード以外の方法による操作
 - タップ
 - クリック
 - ドラッグ・アンド・ドロップ
 
-などを実現している
+などを実現している。
 
 ---
 
