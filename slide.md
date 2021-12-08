@@ -13,7 +13,7 @@ paginate: true
 以下の3つのテーマについて知る
 
 1. UNIXとは何か。私たちに何をもたらしたのか。
-2. CLIにふれよう
+2. CLIについて
 3. YouTube動画をダウンロードする方法
 
 --- 
@@ -94,7 +94,7 @@ Webサイトを提供するサーバでは、約8割がUNIX
 
 多くのネットワーク機器は「CUIを標準搭載している。また、パーソナルコンピュータ (PC) やサーバ向けのオペレーティングシステム (OS) には、既定のインターフェイスがGUIであってもコマンドラインターミナルなどのCUI環境が標準で用意されている。」(wikipedia)
 
-「CLIのみ」と「CUIとGUI両方」の２パターンしかない
+要するに、原則として「CLIのみ」と「CUIとGUI両方」の２パターンしか存在しない。
 
 
 OS | 名前
@@ -156,6 +156,7 @@ ChromeOS は開発者モードにしないとシステムの根幹にアクセ�
 - 有志によって開発されている
 - 無料で使用可能
 - Pythonで実装されている
+- パソコンがあると便利
 
 ---
 
@@ -173,12 +174,13 @@ ChromeOS は開発者モードにしないとシステムの根幹にアクセ�
 # youtube-dl
 ## 環境構築
 
-今回はUNIX環境として Google Cloud Platform を利用
-Google のサーバ上で自由に使える領域にダウンロードする
+UNIX環境として Google Cloud Platform を利用
+Google のサーバ上の自由に使える領域にダウンロードする
 
     OS: Debian GNU/Linux 10 (buster) x86_64
     CPU: Intel Xeon (4) @ 2.200GHz
 
+なお、Windows にもインストールできる。
 
 ---
 
@@ -192,7 +194,7 @@ Google のサーバ上で自由に使える領域にダウンロードする
 
 ---
 
-# 実際に環境構築してみよう
+# 実演：環境構築してみよう
 
 ---
 
@@ -215,8 +217,6 @@ $記号の表示が次の操作を受け付けるサイン
 # youtube-dl
 ## ダウンロード
 
-ここまでで境構築は完了した。実際にダウンロードしてみる。
-
     youtube-dl [URL...]
 
 1. youtube-dl の後にURLをコピペしてEnterを押す
@@ -232,4 +232,27 @@ $記号の表示が次の操作を受け付けるサイン
 
 ---
 
-# 実際にダウンロードしてみよう
+# 実演：YouTube に世界で初めて投稿された動画をダウンロードしてみよう
+
+URL: https://www.youtube.com/watch?v=jNQXAC9IVRw
+
+    Produced by	Jawed Karim (Youtubeの共同創業者のひとり)
+    Release date	April 23, 2005, 8:31:52 p.m. (PDT); 16 years ago
+    Running time	0:19
+    Country	United States
+    Language	English 
+    (wikipedia)
+
+--- 
+
+# まとめ
+
+1. UNIXはOS(基本ソフトウェア)の一種・現代社会に多大な貢献
+2. CLIは文字入力のみでコンピュータを操作する仕組み・ほとんどの環境で利用可能
+3. youtube-dl を用いると安全かつ課金なしでYouTube動画をダウンロードできる。
+
+---
+
+# ご静聴ありがとうございました
+
+スライドのPDFファイルは公式サイトからご覧になれます。
