@@ -255,4 +255,4 @@ URL: https://www.youtube.com/watch?v=jNQXAC9IVRw
 
 # ご静聴ありがとうございました
 
-スライドのPDFファイルは公式サイトからご覧になれます。
+スライドは公式サイトからご覧になれます。
